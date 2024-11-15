@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futár hozzáadása</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="create.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Futár hozzáadása</h1>
+        </div>
+        <div class="torzs">
+            <form action="http://localhost:3000/futar" method="post" enctype="multipart/form-data">
+                <p class="bevitel">
+                    <input type="text" name="fnev" id="fnev" placeholder="Futár neve" value="Valdemar" required>
+                </p>
+                <p class="bevitel">
+                <!--text mert karakter is van benne-->
+                    <input type="text" name="ftel" id="ftel" placeholder="Futár telefonszáma" min="10" value="+361234567" required>
+                </p>
+                <p class="bevitel">
+                    <button type="button" id="createButton">Futár hozzáadása</button>
+                </p>
+            </form>
+            <a href="index.html">Vissza</a>
+        </div>
+        <div class="footer">
+            <p id="footer">All rights reserved: &copy; Baracskai Angyalka</p>
+          </div>
+    </div>
+</body>
+</html>
